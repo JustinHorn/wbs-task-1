@@ -1,0 +1,82 @@
+:root {
+  --grey: #5c5b69;
+  --soft-white: #f7f7f7;
+  --soft-grey: #888b8d;
+  --black: #292f35;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+#content {
+  max-width: 800px;
+}
+
+#header {
+  height: 500px;
+  /*  background: url("//unsplash.it/1200/800") center / cover no-repeat; /**/
+  background: url(./assets/Layer7.png) center / cover no-repeat; /**/
+}
+
+#header .nav a {
+  color: var(--grey);
+}
+
+.logo {
+  width: fit-content;
+}
+
+#about {
+  height: 250px;
+  background-color: var(--soft-white);
+}
+#work img,
+#shop img {
+  width: inherit;
+  height: inherit;
+}
+
+#tweets {
+  height: 200px;
+  background-color: var(--soft-white);
+}
+#discover {
+  color: var(--soft-white);
+  text-transform: uppercase;
+  height: 100px;
+  background-color: var(--black);
+}
+
+#discover a {
+  border: 1px solid var(--soft-white);
+  padding: 1px 10px 1px 10px;
+}
+
+#search {
+  height: 250px;
+}
+
+#contact {
+  height: 100px;
+  background-color: var(--soft-white);
+}
+
+.impressum {
+  text-align: left;
+  font-weight: 100;
+  font-size: 0.5em;
+}
+
+.col {
+  padding: 0px;
+}
+
+.row {
+  margin: 0px;
+}
