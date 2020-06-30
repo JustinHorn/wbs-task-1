@@ -5,12 +5,18 @@
   --black: #292f35;
 }
 
+/*TODO: add arrow overlap
+  add green shop sign
+  add ... to twitter
+  improve yebo
+  refactor
+  */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   height: 100%;
 }
 
@@ -34,18 +40,47 @@ body {
 
 #about {
   height: 250px;
+  color: var(--grey);
   background-color: var(--soft-white);
 }
-#work img,
+
+.headline {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+#tweets {
+  height: 250px;
+  color: var(--grey);
+  background-color: var(--soft-white);
+}
+
+p {
+  color: var(--grey);
+  font-size: 0.6em;
+}
+
+hr {
+  width: 2em;
+}
+
+.work img,
 #shop img {
   width: 100%;
   height: 100%;
+}
+
+.block {
+  color: var(--grey);
 }
 
 #tweets {
   height: 200px;
   background-color: var(--soft-white);
 }
+
 #discover {
   text-transform: uppercase;
   height: 100px;
@@ -68,9 +103,11 @@ body {
   background-color: var(--soft-white);
 }
 
+#icon,
 .icon {
-  width: initial;
   height: initial;
+  width: initial;
+  padding: 1em;
 }
 
 .impressum {
