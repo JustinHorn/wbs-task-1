@@ -10,6 +10,7 @@
   add ... to twitter
   improve yebo
   refactor
+  add hover effects for fun
   */
 html {
   scroll-behavior: smooth;
@@ -21,7 +22,7 @@ body {
 }
 
 #content {
-  max-width: 800px;
+  max-width: 10000px;
 }
 
 #header {
@@ -66,14 +67,58 @@ hr {
   width: 2em;
 }
 
-.work img,
-#shop img {
+.show-img {
   width: 100%;
   height: 100%;
 }
 
+[name="imgIcon"] {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: initial;
+  height: initial;
+  background: transparent;
+  z-index: 100;
+}
+
+.center-absolute {
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: initial;
+  height: initial;
+  background: transparent;
+  z-index: 100;
+}
+
 .block {
   color: var(--grey);
+  min-height: 50%;
+}
+
+.min-h-50 {
+  min-height: 50%;
+}
+
+.h-p {
+  height: 100%;
+}
+
+.block p:before {
+  color: black;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 48.5%;
+  bottom: -22px;
+  transform: rotate(90deg);
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent white;
+  z-index: 100;
 }
 
 #tweets {
@@ -122,4 +167,17 @@ hr {
 
 .row {
   margin: 0px;
+}
+
+.on-hover {
+  content: "SHOP NOW";
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: green;
+  opacity: 0.5;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
 }
