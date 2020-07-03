@@ -6,9 +6,9 @@
 }
 
 /*TODO: add arrow overlap
-  add green shop sign
-  add ... to twitter
   improve yebo
+
+  justify text with in p
   refactor
   add hover effects for fun
   */
@@ -19,10 +19,11 @@ html {
 body {
   font-family: "Lato", sans-serif;
   height: 100%;
+  text-align: center;
 }
 
 #content {
-  max-width: 10000px;
+  max-width: 1000px;
 }
 
 #header {
@@ -39,8 +40,7 @@ body {
   width: fit-content;
 }
 
-#about {
-  height: 250px;
+.text-section {
   color: var(--grey);
   background-color: var(--soft-white);
 }
@@ -49,13 +49,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.8em;
-  letter-spacing: 1px;
-}
-
-#tweets {
-  height: 250px;
-  color: var(--grey);
-  background-color: var(--soft-white);
+  letter-spacing: 0.1em;
 }
 
 p {
@@ -72,89 +66,49 @@ hr {
   height: 100%;
 }
 
-[name="imgIcon"] {
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  width: initial;
-  height: initial;
-  background: transparent;
-  z-index: 100;
-}
-
-.center-absolute {
+.center-absolute-initial {
   color: white;
   position: absolute;
-  top: 45%;
-  left: 45%;
+  left: 50%;
+  top: 50%;
   width: initial;
   height: initial;
   background: transparent;
   z-index: 100;
 }
 
-.block {
-  color: var(--grey);
-  min-height: 50%;
-}
-
-.min-h-50 {
-  min-height: 50%;
-}
-
-.h-p {
-  height: 100%;
-}
-
-.block p:before {
+.arrow-overlap:before {
   color: black;
-  content: " ";
-  height: 0;
-  width: 0;
+  content: "";
+
   position: absolute;
-  left: 48.5%;
-  bottom: -22px;
-  transform: rotate(90deg);
+  left: 46.5%;
+  bottom: -30px;
   border-style: solid;
-  border-width: 15px 0 15px 15px;
-  border-color: transparent transparent transparent white;
+  border-width: 15px;
+  border-color: white transparent transparent transparent;
   z-index: 100;
+  padding: 0;
+  margin: 0;
 }
 
-#tweets {
-  height: 200px;
-  background-color: var(--soft-white);
-}
-
-#discover {
+.discover {
   text-transform: uppercase;
   height: 100px;
   background-color: var(--black);
 }
 
-#discover button {
+.discover-button {
   color: var(--soft-white);
   background-color: var(--black);
   border: 1px solid var(--soft-white);
   padding: 1px 10px 1px 10px;
 }
 
-#search {
-  height: 250px;
-}
-
 #contact {
   height: 100px;
   background-color: var(--soft-white);
 }
-
-#icon,
-.icon {
-  height: initial;
-  width: initial;
-  padding: 1em;
-}
-
 .impressum {
   text-align: left;
   font-weight: 100;
