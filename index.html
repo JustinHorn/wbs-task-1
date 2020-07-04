@@ -179,15 +179,18 @@
         <div class="row">
           <div class="col col-lg-4 col-12">
             <div class="row">
-              <div class="col">
+              <div class="col"  onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)"
+              >
                 <img
                   class="show-img"
                   alt="one small sattle"
                   src="./src/assets/Layer 19.png"
-                />
+                > </img>
               </div>
-              <div class="col">
+              <div class="col"  onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
                 <img
+                name="hover"
+
                   class="show-img"
                   alt="many sattle"
                   src="./src/assets/Layer 21.png"
@@ -195,8 +198,10 @@
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col"  onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
                 <img
+                name="hover"
+
                   class="show-img"
                   alt="wide sattle"
                   src="./src/assets/Layer 20.png"
@@ -204,15 +209,19 @@
               </div>
             </div>
           </div>
-          <div class="col col-lg-2 col-6">
+          <div class="col col-lg-2 col-6"  onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)"> 
             <img
+            name="hover"
+
               class="show-img"
               alt="single bike backpack"
               src="./src/assets/Layer 22.png"
             />
           </div>
-          <div class="col col-lg-2 col-6">
+          <div class="col col-lg-2 col-6"  onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
             <img
+            name="hover"
+
               class="show-img"
               alt="single bike blue background"
               src="./src/assets/Layer 25.png"
@@ -220,29 +229,35 @@
           </div>
           <div class="col col-lg-4 col-12">
             <div class="row">
-              <div class="col">
-                <div class="on-hover"></div>
+              <div class="col"  onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
+
                 <img
+                name="hover"
+
                   class="show-img"
                   alt="shop now"
                   src="./src/assets/Layer 23.png"
-                />
-                <div class="center-absolute-initial">
-                  <img src="src/assets/Shape 13.png" alt="shape13" />
-                  <h6 class="headline">SHOP NOW</h6>
-                </div>
+                >
+          
+             </img>
+
               </div>
+
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
                 <img
+                name="hover"
+
                   class="show-img"
                   alt="sattle and bagpack"
                   src="./src/assets/Layer 24.png"
                 />
               </div>
-              <div class="col">
+              <div class="col"  onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
                 <img
+                name="hover"
+
                   class="show-img"
                   alt="sattle and bagpack"
                   src="./src/assets/Layer 26.png"
@@ -299,9 +314,9 @@
           </div>
           <div class="col d-flex justify-content-center">
             <div class="container my-auto">
-              <img class="p-1" src="./src/assets/rs3.png" alt="twitter" />
-              <img class="p-1" src="./src/assets/rs2.png" alt="facebook" />
-              <img class="p-1" src="./src/assets/rs1.png" alt="pinterest" />
+              <img class="p-1 rotate" src="./src/assets/rs3.png" alt="twitter" />
+              <img class="p-1 rotate" src="./src/assets/rs2.png" alt="facebook" />
+              <img class="p-1 rotate" src="./src/assets/rs1.png" alt="pinterest" />
             </div>
           </div>
           <div class="col">
@@ -329,15 +344,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="src/ipsum.js"></script>
-    <script>
-      let icons = document.getElementsByClassName("center-absolute-initial");
-      for (let i = 0; i < icons.length; i++) {
-        const width = icons[i].clientWidth;
-        icons[i].style.marginLeft = "-" + Math.floor(width * 0.5) + "px";
-        const height = icons[i].clientHeight;
-        icons[i].style.marginTop = "-" + Math.floor(height * 0.5) + "px";
-      }
-    </script>
+    <script src="src/js/ipsum.js"></script>
+    <script src="src/js/iconsHover.js"></script>
   </body>
 </html>
