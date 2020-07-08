@@ -1,10 +1,10 @@
 /*TODO: add arrow overlap
   improve yebo
-
+  
   justify text with in p
   refactor
   add hover effects for fun
-  */
+*/
 
 :root {
   --grey: #5c5b69;
@@ -39,6 +39,17 @@ p {
 #header {
   height: 500px;
   background: url(./assets/Layer7.png) center / cover no-repeat; /**/
+}
+
+.bg-toSmall {
+  width: fit-content;
+  background-color: white;
+}
+
+@media (min-width: 576px) {
+  .bg-toSmall {
+    background-color: transparent;
+  }
 }
 
 .text-section {

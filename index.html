@@ -21,32 +21,40 @@
   <body>
     <div class="container" style="max-width: 1000px;">
       <section id="header" class="">
-        <nav class="navbar navbar-expand">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item my-auto">
-              <a class="nav-link active" href="#about">About us</a>
+        <nav class="navbar navbar-expand-sm">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".toOpen" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./src/assets/Logo.png" />
+          </button>
+          <div class="collapse navbar-collapse toOpen" id="navCollapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item my-auto bg-toSmall mx-auto">
+                <a class="nav-link active" href="#about">About us</a>
+              </li>
+              <li class="nav-item my-auto">
+                <a class="nav-link" href="#">.</a>
+              </li>
+              <li class="nav-item my-auto bg-toSmall mx-auto">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              
+              <div class="collapse navbar-collapse" id="navCollapse"> 
+                <li  class="nav-item my-auto">
+                  <a class="nav-link">
+             <img src="./src/assets/Logo.png"/> 
+            </a>
             </li>
-            <li class="nav-item my-auto">
-              <a class="nav-link" href="#">.</a>
-            </li>
-            <li class="nav-item my-auto">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
-            <li class="nav-item my-auto">
-              <a href="#" class="nav-link"
-                ><img src="./src/assets/Logo.png"
-              /></a>
-            </li>
-            <li class="nav-item my-auto">
-              <a class="nav-link" href="#shop">Shop</a>
-            </li>
-            <li class="nav-item my-auto">
-              <a class="nav-link" href="#">.</a>
-            </li>
-            <li class="nav-item my-auto">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+          </div>
+              <li class="nav-item my-auto bg-toSmall mx-auto">
+                <a class="nav-link" href="#shop">Shop</a>
+              </li>
+              <li class="nav-item my-auto">
+                <a class="nav-link" href="#">.</a>
+              </li>
+              <li class="nav-item my-auto bg-toSmall mx-auto">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </section>
 
